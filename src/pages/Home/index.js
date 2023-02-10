@@ -8,8 +8,8 @@ import { usePrefersReducedMotion, useRouteTransition } from 'hooks'
 import { useLocation } from 'react-router-dom'
 import iphone11 from 'assets/iphone-11.glb'
 import macbookPro from 'assets/macbook-pro.glb'
-import WSF from 'assets/WSF.jpg'
-import WSF_Placeholder from 'assets/WSF-blurred.jpg'
+import port from 'assets/port.png'
+import port_blur from 'assets/port_blur.jpg'
 import chess from 'assets/chess-1.jpg'
 import pf from 'assets/botto-profile.jpg'
 import chess_ph from 'assets/chess-1_blurred.jpg'
@@ -189,18 +189,18 @@ const Home = () => {
                 sectionRef={projectThree}
                 visible={visibleSections.includes(projectThree.current)}
                 index={3}
-                title="Wa-Sticker-Formatter"
-                description="WhatsApp Sticker Creator and Formatter"
+                title="ThreeJS Portfolio"
+                description="You're viewing this project right now!"
                 buttonText="View Project"
-                buttonLink="https://github.com/AlenSaito1/wa-sticker-formatter"
+                buttonLink="https://github.com/nitroxit/ThreeJSPortfolio"
                 model={{
                     type: 'laptop',
-                    alt: 'Wa-Sticker-Formatter',
+                    alt: 'Portfolio',
                     textures: [
                         {
-                            src: WSF,
-                            srcSet: `${WSF} 980w, ${WSF} 1376w`,
-                            placeholder: WSF_Placeholder,
+                            src: port,
+                            srcSet: `${port} 980w, ${port} 1376w`,
+                            placeholder: port_blur,
                         },
                     ],
                 }}
